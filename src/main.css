@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Square+Peg&display=swap');
+
+:root {
+  --border: 1px #d6d5d5 solid;
+  --main-bg: #f8f8f8;
+  --bg-color: #d6d5d5;
+  --list-pad: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* navbar */
+.navbar {
+  width: 75vw;
+  height: 50px;
+  background-color: #060671;
+  margin: 1rem 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin-right: 1rem;
+}
+
+/* end of navbar */
+
+/* main section */
+
+.main-section {
+  width: 75vw;
+  min-height: 25rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.card-image {
+  height: 250px;
+  width: 100%;
+}
+
+.img {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-btn {
+  width: 100%;
+  border: 0;
+  padding: 8px;
+  background-color: #11118a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fa-solid {
+  cursor: pointer;
+  color: #00f;
+}
+
+/* end of main section */
+
+/* footer section */
+.footer {
+  width: 75vw;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(216, 216, 216);
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+/* end of footer section */
