@@ -44,15 +44,16 @@ class App {
       result += info;
     });
     scores.innerHTML = result;
-    const commentButtons = document.querySelectorAll('.card-btn')
+    const commentButtons = document.querySelectorAll('.card-btn');
     commentButtons.forEach((button) => {
       button.addEventListener('click', (e) => {
-        const id = e.path[1].id
-        console.log(id)
-        //function launch popup with id
-      })
-    })
+        const { id } = e.path[1];
 
+        console.log(id);
+
+        // function launch popup with id
+      });
+    });
   }
 }
 
