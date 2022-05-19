@@ -1,6 +1,7 @@
-const scores = document.querySelector('.card-container');
+import url from './url_config.js';
+import renderPopUp from './comment_pop_up.js';
 
-const url = 'https://api.thedogapi.com/v1/breeds';
+const scores = document.querySelector('.card-container');
 class App {
   static getData = async () => {
     const response = await fetch(url);
@@ -49,7 +50,7 @@ class App {
       button.addEventListener('click', (e) => {
         const { id } = e.path[1];
 
-        console.log(id);
+        renderPopUp(id);
 
         // function launch popup with id
       });
