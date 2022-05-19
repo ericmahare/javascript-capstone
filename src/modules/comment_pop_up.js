@@ -15,11 +15,9 @@ const constructDogShowInfoDOM = (dogShow) => {
             <div class="ctn-icn">
             <i class="fa-solid fa-xmark"></i>
             </div>
-            <div class="ctn-img">
-
-                <img src="https://cdn2.thedogapi.com/images/${dogShow.reference_image_id}.jpg" alt="dogshow_preview">
-
+            <div class="ctn-img" style="background-image:url(https://cdn2.thedogapi.com/images/${dogShow.reference_image_id}.jpg)">
             </div>
+            <div class="info-container">
             <h3 class="dogshow-name">${dogShow.name}</h3>
             <div class="dogshow_info">
                 <h5>Type : <span>${dogShow.bred_for}</span></h5>
@@ -35,10 +33,11 @@ const constructDogShowInfoDOM = (dogShow) => {
             </div>
             <h3>Add a comment</h3>
             <form class="comment-form" action="" method="post">
-                <input class="name-area" type="text" name="name" id="name">
-                <textarea class="comment-area" type="text" name="comment" id="comment" required></textarea>
+                <input class="name-area" type="text" name="name" id="name" placeholder="Your name">
+                <textarea class="comment-area" type="text" name="comment" id="comment" required placeholder="Your insights"></textarea>
                 <input class="sub-button" type="submit" value="Comment">
             </form>
+            <div>
         </div>`;
 
   popUpCtn.innerHTML += showInfoDiv;
@@ -51,9 +50,5 @@ const constructDogShowInfoDOM = (dogShow) => {
 const renderPopUp = (id) => {
   getDogShowInfo(id).then((dogShow) => constructDogShowInfoDOM(dogShow));
 };
-
-// const createComment = (id) => {
-// send the comment to the server
-// };
 
 export default renderPopUp;
