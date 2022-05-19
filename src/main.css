@@ -5,6 +5,7 @@
   --main-bg: #f8f8f8;
   --bg-color: #d6d5d5;
   --list-pad: 15px;
+  --popup-text-color: rgb(34, 33, 33);
 }
 
 * {
@@ -113,3 +114,82 @@ body {
 }
 
 /* end of footer section */
+
+.ctn-dog-info-window {
+  display: none;
+  top: 0;
+}
+
+.show {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: var(--popup-text-color);
+  background-color: rgba(0, 0, 0, 0.282);
+}
+
+.ctn-dog-info {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.ctn-img img {
+  margin: auto;
+  display: block;
+  height: 500px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.dogshow-name {
+  text-align: center;
+}
+
+.ctn-comments-head {
+  align-content: center;
+}
+
+.comments-head {
+  text-align: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.dogshow_info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.dogshow_info h5 span {
+  color: rgb(127, 159, 159);
+}
+
+.ctn-icn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.name-area {
+  width: 10rem;
+}
+
+.comment-area {
+  width: 20rem;
+  height: 5rem;
+}
+
+.sub-button {
+  width: 10rem;
+  height: 2rem;
+}
