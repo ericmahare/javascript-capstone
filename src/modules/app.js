@@ -23,11 +23,11 @@ class App {
     }
     let result = '';
     data.forEach((data) => {
-      const { name, image } = data;
+      const { id, name, image } = data;
       const { url } = image;
       const info = `
       <!-- card -->
-      <article class="card">
+      <article id=${id} class="card">
         <div class="card-image" style="background-image: url(${url}); background-size:cover; background-position:center; background-repeat:no-repeat;">
         </div>
         <div class="card-info">
@@ -44,6 +44,16 @@ class App {
       result += info;
     });
     scores.innerHTML = result;
+    const commentButtons = document.querySelectorAll('.card-btn');
+    commentButtons.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        const { id } = e.path[1];
+
+        console.log(id);
+
+        // function launch popup with id
+      });
+    });
   }
 }
 
