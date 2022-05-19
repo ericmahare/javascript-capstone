@@ -200,6 +200,7 @@ body {
   padding: 8px;
   margin-top: 5px;
   outline: none;
+  border-radius: 5px;
 }
 
 .comment-area {
@@ -208,6 +209,7 @@ body {
   resize: none;
   outline: none;
   padding: 8px;
+  border-radius: 5px;
 }
 
 .sub-button {
@@ -216,4 +218,15 @@ body {
   border: none;
   background-color: var(--head-color);
   color: var(--main-bg);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.comment-list {
+  margin: 1rem 0;
+  cursor: pointer;
 }
