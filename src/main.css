@@ -6,6 +6,7 @@
   --bg-color: #d6d5d5;
   --list-pad: 15px;
   --popup-text-color: rgb(34, 33, 33);
+  --head-color: #11118a;
 }
 
 * {
@@ -88,7 +89,7 @@ body {
   width: 100%;
   border: 0;
   padding: 8px;
-  background-color: #11118a;
+  background-color: var(--head-color);
   color: #fff;
   cursor: pointer;
 }
@@ -130,34 +131,47 @@ body {
 }
 
 .ctn-dog-info {
-  width: 50%;
+  width: 35%;
   height: 80%;
   margin: auto;
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 1rem 0.3rem 0.3rem 0.3rem;
   background-color: white;
   border-radius: 10px;
   overflow-y: scroll;
 }
 
-.ctn-img img {
+.ctn-img {
   margin: auto;
   display: block;
-  height: 500px;
+  height: 330px;
   border-radius: 5px;
-  width: 80%;
+  width: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-container {
+  width: 85%;
+  margin: 20px auto;
 }
 
 .dogshow-name {
   text-align: center;
+  color: var(--head-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .ctn-comments-head {
   align-content: center;
+  margin-bottom: 1rem;
 }
 
 .comments-head {
   text-align: center;
+  color: var(--head-color);
 }
 
 .comment-form {
@@ -169,6 +183,7 @@ body {
 .dogshow_info {
   display: grid;
   grid-template-columns: 50% 50%;
+  margin: 13px 0;
 }
 
 .dogshow_info h5 span {
@@ -181,15 +196,24 @@ body {
 }
 
 .name-area {
-  width: 10rem;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  outline: none;
 }
 
 .comment-area {
-  width: 20rem;
+  width: 100%;
   height: 5rem;
+  resize: none;
+  outline: none;
+  padding: 8px;
 }
 
 .sub-button {
-  width: 10rem;
+  width: 100%;
   height: 2rem;
+  border: none;
+  background-color: var(--head-color);
+  color: var(--main-bg);
 }
