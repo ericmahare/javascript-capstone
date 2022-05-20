@@ -49,7 +49,7 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-1. Download the `Zip` or `(git clone)[https://github.com/ger619/books-app]`
+1. Download the `Zip` or `(git clone)[https://github.com/ericmahare/javascript-capstone.git]`
 2. `cd books-app`
 3. Then open in your browser by using `live server`\
 
@@ -58,7 +58,7 @@ To get a local copy up and running follow these simple example steps.
 - On your terminal run : `npm i`
 - For Webpack to build and bundle the app files : `npm run build`
 - For Webpack to start the development server : `npm run start`
-- In case you run into any errors please raise an [issue](https://github.com/Yazino12/capstone-project2/issues).
+- In case you run into any errors please raise an [issue](https://github.com/ericmahare/javascript-capstone/issues).
 ## Test
 
 For tracking linter errors locally you need to follow these steps:
