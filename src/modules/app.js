@@ -1,5 +1,5 @@
 import Likes from './likes.js';
-import url from './url_config.js';
+import { url } from './url_config.js';
 import renderPopUp from './comment_pop_up.js';
 
 const scores = document.querySelector('.card-container');

@@ -1,10 +1,8 @@
-/* eslint-disable linebreak-style */
-// https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/D8OVZtdBVSdILi60DTqq/likes
+import { urlLike } from './url_config.js';
 
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XKoSxq12U35aNHorgjxm/likes';
 class Likes {
   static getData = async () => {
-    const response = await fetch(url);
+    const response = await fetch(urlLike);
     const likes = await response.json();
     return likes;
   }
@@ -18,7 +16,7 @@ class Likes {
           item_id: id,
         };
         fetch(
-          url,
+          urlLike,
           {
             method: 'POST',
             body: JSON.stringify(data),

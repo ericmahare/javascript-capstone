@@ -1,4 +1,4 @@
-import url from './url_config.js';
+import { url } from './url_config.js';
 import Comments from './comments.js';
 
 const getDogShowInfo = async (id) => {
