@@ -86,7 +86,7 @@ For tracking linter errors locally you need to follow these steps:
 - Twitter: [@asia_magana](https://twitter.com/asia_magana)
 - LinkedIn: [Asia Magana](https://www.linkedin.com/in/asia-magana-60b451200/)
 
-👤 ** **
+👤 ** Eric Mahare**
 
 - GitHub: [@erikmahare](https://github.com/ericmahare) 
 - Twitter: [@erikmahare](https://twitter.com/erikmahare) 
