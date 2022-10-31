@@ -2,10 +2,6 @@
 
 > [Live Demo](https://dogs-store-capstone-project.netlify.app/)
 
-## vide Demo
-
-> [Video Demo](https://drive.google.com/file/d/1aGGxck4R2wCi9Qn0c_RcAvqunsJE_LsT/view?usp=sharing)
-
 ## Description
 
 > In this project, we build a basic website that   receives dog show image  with all data about that dog. The Webapp has two interfaces: A home page, showing a list of dog , icon to  like the dog and the comment button . the second interface is  a popup window with more data about the dog  that you can comment on.
